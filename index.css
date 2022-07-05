@@ -1,0 +1,26 @@
+.bg-black {
+    background-color: black;
+    color: white;
+}
+
+.flex {
+    display: flex;
+}
+
+.p-1 {
+    padding: 10px;
+}
+
+.m-1 {
+    margin: 10px;
+}
+
+.mb-1 {
+    margin-bottom: 10px;
+}
+
+.square {
+    height: 200px;
+    width: 200px;
+    box-shadow: 2px 2px 5px black;
+}
