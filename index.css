@@ -38,3 +38,15 @@
 .align-r {
     text-align: right;
 }
+
+.small-square {
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px black;
+    width: 25px;
+    height: 25px;
+}
+
+.text-center {
+    text-align: center;
+}
