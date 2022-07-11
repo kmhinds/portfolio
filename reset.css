@@ -46,7 +46,7 @@ table {
 	border-spacing: 0;
 }
 html, body *{
-    overflow-x: hidden;
+    overflow: hidden;
 	font-family: sans-serif;
 	max-width: 100%;
 }
