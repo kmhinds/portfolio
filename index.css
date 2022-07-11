@@ -35,10 +35,6 @@
     text-align: center;
 }
 
-.align-r {
-    text-align: right;
-}
-
 .small-square {
     align-items: center;
     justify-content: center;
@@ -49,4 +45,20 @@
 
 .text-center {
     text-align: center;
+}
+
+.text-overflow {
+    word-wrap: break-word;
+}
+
+.font1 {
+    font-size: 3em;
+}
+
+.font2 {
+    font-size: 1.25em;
+}
+
+.pb-3 {
+    padding-bottom: 2em;
 }
