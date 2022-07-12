@@ -1,7 +1,7 @@
 const canvas = document.getElementById("canvas1");
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.height = canvas.getBoundingClientRect().height
 
 let particlesArray;
 
@@ -80,8 +80,8 @@ function init() {
     let numberOfParticles = (canvas.height * canvas.width) / 9000;
     for (let i = 0; i < numberOfParticles*2; i++) {
         let size = (Math.random() * 5) + 1;
-        let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
-        let y = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
+        let x = (Math.random() * ((window.innerWidth - size * 2) - (size * 2)) + size * 2);
+        let y = (Math.random() * ((window.innerWidth - size * 2) - (size * 2)) + size * 2);
         let directionX = (Math.random() * 5) - 2.5;
         let directionY = (Math.random() * 5) - 2.5;
         let color = '#8C5523';
@@ -113,7 +113,7 @@ function connect(){
 // animation loop
 function animate() {
     requestAnimationFrame(animate);
-    ctx.clearRect(0,0,innerWidth, innerHeight);
+    ctx.clearRect(0,0,window.innerWidth, canvas.height);
 
     for (let i = 0; i < particlesArray.length; i++) {
         particlesArray[i].update();
@@ -124,8 +124,8 @@ function animate() {
 // risize event
 window.addEventListener('resize', 
     function(){
-        canvas.width = innverWidth;
-        canvas.height = innerHeight;
+        canvas.width = window.innerWidth;
+        canvas.height = canvas.getBoundingClientRect().height;
         mouse.radius = ((canvas.height/80) * (canvas.height/80));
         init();
     }

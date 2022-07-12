@@ -67,3 +67,15 @@
     padding-bottom: 2em;
 }
 
+.h-full {
+    height: 100%
+}
+
+.relative {
+    position: relative
+
+}
+
+.min-h-vh {
+    min-height: 100vh;
+}
