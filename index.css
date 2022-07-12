@@ -79,3 +79,7 @@
 .min-h-vh {
     min-height: 100vh;
 }
+
+.text-c {
+    color: #ffffff;
+}
