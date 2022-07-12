@@ -48,3 +48,7 @@ table {
 html, body *{
 	font-family: sans-serif;
 }
+
+body {
+	height: 100%;
+}
