@@ -83,3 +83,7 @@
 .text-c {
     color: #ffffff;
 }
+
+img:hover {
+    background-color: #8C5523;
+}
